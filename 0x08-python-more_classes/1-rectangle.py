@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-"""empty class Square that defines a rectangle"""
+"""class Rectangle that defines a rectangle"""
 
 
 class Rectangle:
-    """empty class Square that defines a rectangle"""
+    """class Rectangle that defines a rectangle"""
     def __init__(self, width=0, height=0):
         """Init the rectangle"""
         self.width = width
