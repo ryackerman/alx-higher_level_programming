@@ -23,7 +23,8 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
-    
+
+
 class Rectangle(BaseGeometry):
     """A class representing a rectangle."""
 
@@ -46,7 +47,8 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """Returns a string representation of the rectangle."""
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
-    
+
+
 class Square(Rectangle):
     """A representation of a square"""
     def __init__(self, size):
