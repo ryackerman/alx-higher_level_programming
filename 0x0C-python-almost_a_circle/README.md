@@ -26,6 +26,11 @@ You will also learn about:
 - `args` and `kwargs`
 - Serialization/Deserialization
 - JSON
+
+
+https://github.com/ryackerman/alx-higher_level_programming/assets/73302001/d641541e-6361-48dd-8dbc-a8477623d45a
+
+
 ## Resources
 
 **Read or watch:**
