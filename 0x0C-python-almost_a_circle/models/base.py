@@ -72,3 +72,12 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Base instance"""
+        attrs = ["id"]
+        if hasattr(self, "size"):
+            attrs.extend(["size", "x", "y"])
+        else:
+            attrs.extend(["width", "height", "x", "y"])
+        return {attr: getattr(self, attr) for attr in attrs}
