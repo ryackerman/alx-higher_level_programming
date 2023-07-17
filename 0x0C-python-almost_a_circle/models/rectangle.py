@@ -97,3 +97,9 @@ class Rectangle(Base):
         """Returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """Updates the attributes of the rectangle"""
+        attr_names = ['id', 'width', 'height', 'x', 'y']
+        for i, arg in enumerate(args):
+            setattr(self, attr_names[i], arg)
