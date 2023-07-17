@@ -37,3 +37,14 @@ class Square(Rectangle):
         """Overrides the __str__ method"""
         return "[Square] ({}) {}/{} - {}".format(
                 self.id, self.x, self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """Updates the attributes of the square"""
+        if args:
+            attr_names = ['id', 'size', 'x', 'y']
+            for i, arg in enumerate(args):
+                setattr(self, attr_names[i], arg)
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
