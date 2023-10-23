@@ -1,0 +1,20 @@
+First we're going to test our func with scalar div with single digit div
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+
+
+Then we test our func using scalar div with multi digits div
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 33)
+[[0.03, 0.06, 0.09], [0.12, 0.15, 0.18]]
+
+
+Then we test our function using scalar div with large div
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 333)
+[[0.0, 0.01, 0.01], [0.01, 0.02, 0.02]]

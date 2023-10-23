@@ -1,0 +1,31 @@
+First we are going to test int numbers:
+    
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
+
+    >>> add_integer(-1, 1)
+    0
+
+and now with float:
+
+    >>> add_integer(1.0, 5.0)
+    6
+
+    >>> add_integer(-1.0, 5.0)
+    4
+
+since b=98 that means if we enter only one value (which is a), the addition will happen
+
+    >>> add_integer(2)
+    100
+
+And of course we can't add numbers to strings
+
+    >>> add_integer(1, "b")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    >>> add_integer("a", 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
